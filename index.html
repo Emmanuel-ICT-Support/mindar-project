@@ -9,11 +9,11 @@
   <body>
     <a-scene mindar-image="imageTargetSrc: ./targets.mind;" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">  
       <a-assets>
-        <gif id="ai1" src="converted_video_1.gif"></gif>
+        <video id="ai01" src="converted_video_1.mp4"></video>
       </a-assets>
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
       <a-entity mindar-image-target="targetIndex: 0">
-        <a-entity material="shader: gif; src: url(https://raw.githubusercontent.com/masonikarts/web-ar-gif/main/converted_video_1.gif);" rotation="-90 0 0" position="0 0.5 0" width="1.5" height="1"></a-entity> 
+        <a-entity geometry="primitive: plane" material="src: #ai01"></a-entity>
       </a-entity>
     </a-scene>
   </body>
