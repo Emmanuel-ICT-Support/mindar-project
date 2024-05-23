@@ -6,14 +6,6 @@
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
     
     <script>
-      const showInfo = () => {
-        let y = 0;
-        const profileButton = document.querySelector("#profile-button");
-        const webButton = document.querySelector("#web-button");
-        const emailButton = document.querySelector("#email-button");
-        const locationButton = document.querySelector("#location-button");
-        const text = document.querySelector("#text");
-
       AFRAME.registerComponent('mytarget', {
         init: function () {
           this.el.addEventListener('targetFound', event => {
