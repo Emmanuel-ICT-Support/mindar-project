@@ -9,15 +9,6 @@
   </head>
 
   <body>        
-        <a-entity
-          position="0 0 -1.5"
-          text="align: center;
-                width: 6;
-                wrapCount: 100;
-                color: black;
-                value: Click or tap to start video"
-          hide-on-play="#videoFireworks">
-        </a-entity>
     <a-scene mindar-image="imageTargetSrc: ./targets.mind;" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">  
       <a-assets>
         <video id="ai01" preload="auto"
@@ -34,8 +25,19 @@
                 position="0 0 0"
                 rotation="0 0 0"
                 play-on-click
-                visible="true">
+                visible="false">
       </a-entity>
+      
+        <a-entity
+          position="0 0 -1.5"
+          text="align: center;
+                width: 6;
+                wrapCount: 100;
+                color: black;
+                value: Click or tap to start video"
+          hide-on-play="#ai01">
+        </a-entity>
+      
     </a-scene>
   </body>
 </html>
